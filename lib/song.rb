@@ -25,7 +25,7 @@ class Song
     if a == nil 
       Artist.new(name)
     else 
-      a 
+      puts a 
     end 
   end
   
