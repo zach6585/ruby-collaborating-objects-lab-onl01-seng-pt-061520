@@ -22,7 +22,10 @@ class Song
   
    def artist_name=(name)
     a = Artist.all.select(|nem| nem == name)
-    a
+    if a == nil 
+      Artist.new(name)
+    else 
+      a 
   end
   
 end 
