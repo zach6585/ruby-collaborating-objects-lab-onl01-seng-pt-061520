@@ -21,7 +21,7 @@ class Song
   end 
   
    def artist_name=(name)
-    a = Artist.all.select(|nem| nem == name)
+    a = Artist.all.select{|nem| nem == name}
     if a == nil 
       Artist.new(name)
     else 
