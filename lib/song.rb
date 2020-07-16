@@ -26,6 +26,7 @@ class Song
       Artist.new(name)
     else 
       a 
+    end 
   end
   
 end 
