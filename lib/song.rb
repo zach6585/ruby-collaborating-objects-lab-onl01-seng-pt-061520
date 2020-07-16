@@ -20,8 +20,8 @@ class Song
     song
   end 
   
-   def artist_name=(name)
-    a = Artist.all.select{|nem| nem == name}
+   def artist_name=(nemo)
+    a = Artist.all.select{|nem| nem.name == nemo}
     if a == nil 
       Artist.new(name)
     else 
