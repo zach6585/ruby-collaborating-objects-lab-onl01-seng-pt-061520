@@ -21,13 +21,6 @@ class Song
   end 
   
    def artist_name=(nemo)
-    a = Artist.all.select{|nem| nem.name == nemo}
-    puts a 
-    if a == nil 
-      Artist.new(name)
-    else 
-      puts a 
-    end 
-  end
+    
   
 end 
